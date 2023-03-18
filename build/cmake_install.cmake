@@ -131,6 +131,10 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ubuntu/ros_ren/build/gtest/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/mypkg/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/mypkg_01/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/async_web_server_cpp/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/web_video_server/cmake_install.cmake")
 
 endif()
 
