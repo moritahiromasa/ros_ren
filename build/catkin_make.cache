@@ -1,2 +1,2 @@
-mypkg:mypkg_image:test_pkg
+mypkg:test_pkg
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/ros_ren/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_ren/install -G Unix Makefiles
