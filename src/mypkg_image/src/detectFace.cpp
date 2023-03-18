@@ -8,9 +8,9 @@ using namespace std;
 int main()
 {
 	CascadeClassifier cascade;
-	cascade.load("/home/ubuntu/Downloads/opencv/data/haarcascade_frontalface_default.xml"); // 正面顔情報が入っているカスケードファイル読み込み
+	cascade.load("~/ros_ren/src/Cascade/haarcascade_frontalface_default.xml"); // 正面顔情報が入っているカスケードファイル読み込み
 	
-	Mat img = imread("~/Pictures/photo.png", IMREAD_UNCHANGED); // 入力画像読み込み
+	Mat img = imread("~/ros_ren/src/img/photo.png", IMREAD_UNCHANGED); // 入力画像読み込み
 	vector<Rect> faces; // 輪郭情報を格納場所
 	cascade.detectMultiScale(img, faces, 1.1, 3, 0, Size(20, 20)); // カスケードファイルに基づいて顔を検知する. 検知した顔情報をベクトルfacesに格納
 	

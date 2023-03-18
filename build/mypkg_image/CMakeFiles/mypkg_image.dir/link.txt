@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/mypkg_image.dir/src/detectFace.cpp.o  -o mypkg_image 

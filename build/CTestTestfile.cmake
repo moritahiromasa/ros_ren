@@ -6,6 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("mypkg")
-subdirs("mypkg_01")
-subdirs("async_web_server_cpp")
-subdirs("web_video_server")
+subdirs("mypkg_image")
+subdirs("test_pkg")

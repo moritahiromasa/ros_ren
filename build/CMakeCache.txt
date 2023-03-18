@@ -548,7 +548,7 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/usr/lib/aarch64-linux-gnu/libdl.so
+lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -570,6 +570,12 @@ mypkg_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/mypkg
 
 //Value Computed by CMake
 mypkg_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/mypkg
+
+//Value Computed by CMake
+mypkg_image_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/mypkg_image
+
+//Value Computed by CMake
+mypkg_image_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/mypkg_image
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/aarch64-linux-gnu/libcrypto.so
@@ -627,6 +633,12 @@ sensor_msgs_DIR:PATH=/opt/ros/noetic/share/sensor_msgs/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/noetic/share/std_msgs/cmake
+
+//Value Computed by CMake
+test_pkg_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/test_pkg
+
+//Value Computed by CMake
+test_pkg_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/test_pkg
 
 //Value Computed by CMake
 web_video_server_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/web_video_server
@@ -787,7 +799,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
