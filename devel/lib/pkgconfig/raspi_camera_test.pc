@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/ros_ren/devel
+
+Name: raspi_camera_test
+Description: Description of raspi_camera_test
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lraspi_camera_test
+Requires: cv_bridge rospy sensor_msgs

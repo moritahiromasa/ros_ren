@@ -7,3 +7,5 @@
 subdirs("gtest")
 subdirs("mypkg")
 subdirs("test_pkg")
+subdirs("image_test")
+subdirs("raspi_camera_test")

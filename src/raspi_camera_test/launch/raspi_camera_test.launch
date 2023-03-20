@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="raspi_camera_test" name="face_to_face1" type="face_to_face1.py" output="screen" required="true" >
+</launch>
