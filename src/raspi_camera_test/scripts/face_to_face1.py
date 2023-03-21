@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import rospy, cv2
 from sensor_msgs.msg import Image
@@ -13,6 +13,8 @@ class FaceToFace():
 	def get_image(self, img):
 		try:
 			self.image_org = self.bridge.imgmsg_to_cv2(img, "bgr8")
+			print(image_org)
+			rospy.loginfo(image_org)
 		except CvBridgeError as e:
 			rospy.logerr(e)
 

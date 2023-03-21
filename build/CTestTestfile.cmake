@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("mypkg")
+subdirs("raspi_camera")
 subdirs("test_pkg")
 subdirs("image_test")
 subdirs("raspi_camera_test")
