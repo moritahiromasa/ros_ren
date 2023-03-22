@@ -28,7 +28,8 @@ public:
 		while (ros::ok()) {
 			ros::spinOnce();
 
-			std::string imageFileName = imageDir_ + std::to_string(imageIdx) + ".jpg";
+			string imageFileName = imageDir_ + to_string(imageIdx) + ".jpg";
+//			std::string imageFileName = imageDir_ + std::to_string(imageIdx) + ".jpg";
 			printf("imageFileName=%s\n", imageFileName.c_str());
 	
 /*			imageIdx++;

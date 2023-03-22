@@ -1,6 +1,6 @@
 set(_CATKIN_CURRENT_PACKAGE "image_test")
 set(image_test_VERSION "0.0.0")
-set(image_test_MAINTAINER "ubuntu <ubuntu@todo.todo>")
+set(image_test_MAINTAINER "Hiromasa Morita <morimasahirota@gmail.com>")
 set(image_test_PACKAGE_FORMAT "2")
 set(image_test_BUILD_DEPENDS "roscpp" "rospy" "sensor_msgs" "std_msgs")
 set(image_test_BUILD_EXPORT_DEPENDS "roscpp" "rospy" "sensor_msgs" "std_msgs")
