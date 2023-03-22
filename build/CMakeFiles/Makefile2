@@ -59,6 +59,7 @@ all: mypkg/all
 all: test_pkg/all
 all: image_test/all
 all: raspi_camera/all
+all: raspi_image/all
 
 .PHONY : all
 
@@ -69,6 +70,7 @@ preinstall: mypkg/preinstall
 preinstall: test_pkg/preinstall
 preinstall: image_test/preinstall
 preinstall: raspi_camera/preinstall
+preinstall: raspi_image/preinstall
 
 .PHONY : preinstall
 
@@ -84,6 +86,7 @@ clean: mypkg/clean
 clean: test_pkg/clean
 clean: image_test/clean
 clean: raspi_camera/clean
+clean: raspi_image/clean
 
 .PHONY : clean
 
@@ -225,6 +228,24 @@ raspi_camera_test/preinstall:
 raspi_camera_test/clean: raspi_camera_test/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : raspi_camera_test/clean
+
+#=============================================================================
+# Directory level rules for directory raspi_image
+
+# Recursive "all" directory target.
+raspi_image/all: raspi_image/CMakeFiles/raspi_image.dir/all
+
+.PHONY : raspi_image/all
+
+# Recursive "preinstall" directory target.
+raspi_image/preinstall:
+
+.PHONY : raspi_image/preinstall
+
+# Recursive "clean" directory target.
+raspi_image/clean: raspi_image/CMakeFiles/raspi_image.dir/clean
+
+.PHONY : raspi_image/clean
 
 #=============================================================================
 # Directory level rules for directory test_pkg
@@ -539,7 +560,7 @@ raspi_camera_test/CMakeFiles/_catkin_empty_exported_target.dir/clean:
 test_pkg/CMakeFiles/test_pub.dir/all:
 	$(MAKE) -f test_pkg/CMakeFiles/test_pub.dir/build.make test_pkg/CMakeFiles/test_pub.dir/depend
 	$(MAKE) -f test_pkg/CMakeFiles/test_pub.dir/build.make test_pkg/CMakeFiles/test_pub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/ros_ren/build/CMakeFiles --progress-num=13,14 "Built target test_pub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/ros_ren/build/CMakeFiles --progress-num=15,16 "Built target test_pub"
 .PHONY : test_pkg/CMakeFiles/test_pub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -701,7 +722,7 @@ test_pkg/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/clean:
 test_pkg/CMakeFiles/test_sub.dir/all:
 	$(MAKE) -f test_pkg/CMakeFiles/test_sub.dir/build.make test_pkg/CMakeFiles/test_sub.dir/depend
 	$(MAKE) -f test_pkg/CMakeFiles/test_sub.dir/build.make test_pkg/CMakeFiles/test_sub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/ros_ren/build/CMakeFiles --progress-num=15,16 "Built target test_sub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/ros_ren/build/CMakeFiles --progress-num=17,18 "Built target test_sub"
 .PHONY : test_pkg/CMakeFiles/test_sub.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1314,6 +1335,33 @@ raspi_camera: raspi_camera/CMakeFiles/raspi_camera.dir/rule
 raspi_camera/CMakeFiles/raspi_camera.dir/clean:
 	$(MAKE) -f raspi_camera/CMakeFiles/raspi_camera.dir/build.make raspi_camera/CMakeFiles/raspi_camera.dir/clean
 .PHONY : raspi_camera/CMakeFiles/raspi_camera.dir/clean
+
+#=============================================================================
+# Target rules for target raspi_image/CMakeFiles/raspi_image.dir
+
+# All Build rule for target.
+raspi_image/CMakeFiles/raspi_image.dir/all:
+	$(MAKE) -f raspi_image/CMakeFiles/raspi_image.dir/build.make raspi_image/CMakeFiles/raspi_image.dir/depend
+	$(MAKE) -f raspi_image/CMakeFiles/raspi_image.dir/build.make raspi_image/CMakeFiles/raspi_image.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ubuntu/ros_ren/build/CMakeFiles --progress-num=13,14 "Built target raspi_image"
+.PHONY : raspi_image/CMakeFiles/raspi_image.dir/all
+
+# Build rule for subdir invocation for target.
+raspi_image/CMakeFiles/raspi_image.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_ren/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 raspi_image/CMakeFiles/raspi_image.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/ros_ren/build/CMakeFiles 0
+.PHONY : raspi_image/CMakeFiles/raspi_image.dir/rule
+
+# Convenience name for target.
+raspi_image: raspi_image/CMakeFiles/raspi_image.dir/rule
+
+.PHONY : raspi_image
+
+# clean rule for target.
+raspi_image/CMakeFiles/raspi_image.dir/clean:
+	$(MAKE) -f raspi_image/CMakeFiles/raspi_image.dir/build.make raspi_image/CMakeFiles/raspi_image.dir/clean
+.PHONY : raspi_image/CMakeFiles/raspi_image.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

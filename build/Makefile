@@ -674,6 +674,19 @@ raspi_camera/fast:
 	$(MAKE) -f raspi_camera/CMakeFiles/raspi_camera.dir/build.make raspi_camera/CMakeFiles/raspi_camera.dir/build
 .PHONY : raspi_camera/fast
 
+#=============================================================================
+# Target rules for targets named raspi_image
+
+# Build rule for target.
+raspi_image: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 raspi_image
+.PHONY : raspi_image
+
+# fast build rule for target.
+raspi_image/fast:
+	$(MAKE) -f raspi_image/CMakeFiles/raspi_image.dir/build.make raspi_image/CMakeFiles/raspi_image.dir/build
+.PHONY : raspi_image/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -726,6 +739,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... image_publisher"
 	@echo "... raspi_camera"
+	@echo "... raspi_image"
 .PHONY : help
 
 

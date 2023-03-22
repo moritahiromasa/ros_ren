@@ -100,3 +100,11 @@
 /home/ubuntu/ros_ren/build/raspi_camera/CMakeFiles/edit_cache.dir
 /home/ubuntu/ros_ren/build/raspi_camera/CMakeFiles/test.dir
 /home/ubuntu/ros_ren/build/raspi_camera/CMakeFiles/raspi_camera.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/install/strip.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/install/local.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/install.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/test.dir
+/home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/raspi_image.dir

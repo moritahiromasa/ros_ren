@@ -554,7 +554,7 @@ image_test_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/image_test
 image_transport_DIR:PATH=/opt/ros/noetic/share/image_transport/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/opt/ros/noetic/lib/librospack.so
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -618,6 +618,12 @@ raspi_camera_test_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/raspi_camera_test
 
 //Value Computed by CMake
 raspi_camera_test_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/raspi_camera_test
+
+//Value Computed by CMake
+raspi_image_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/raspi_image
+
+//Value Computed by CMake
+raspi_image_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/raspi_image
 
 //The directory containing a CMake configuration file for rosconsole.
 rosconsole_DIR:PATH=/opt/ros/noetic/share/rosconsole/cmake
@@ -823,7 +829,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=10
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

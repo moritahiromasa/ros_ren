@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/ubuntu/ros_ren/src/raspi_camera/src/detectFace.cpp
-ros/ros.h
+/home/ubuntu/ros_ren/src/raspi_image/src/detectFace.cpp
+opencv2/opencv.hpp
 -
+opencv2/highgui.hpp
+-
+ros/ros.h
+/home/ubuntu/ros_ren/src/raspi_image/src/ros/ros.h
 iostream
 -
 vector
 -
-opencv2/opencv.hpp
-/home/ubuntu/ros_ren/src/raspi_camera/src/opencv2/opencv.hpp
-opencv2/highgui.hpp
-/home/ubuntu/ros_ren/src/raspi_camera/src/opencv2/highgui.hpp
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

@@ -1,13 +1,17 @@
-#include "opencv2/opencv.hpp"
-#include "opencv2/highgui.hpp"
+#include <ros/ros.h>
 #include <iostream>
 #include <vector>
+#include "opencv2/opencv.hpp"
+#include "opencv2/highgui.hpp"
 
 using namespace cv;
 using namespace std;
 
+int main(int argc, char** argv)
+{
+	ros::init(argc, argv, "detectFace");
 
-int main(){
+
 
 	Mat frame; 
 	CascadeClassifier cascade;
