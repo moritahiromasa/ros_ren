@@ -131,11 +131,11 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/ubuntu/ros_ren/build/gtest/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/raspi_camera_test/cmake_install.cmake")
   include("/home/ubuntu/ros_ren/build/mypkg/cmake_install.cmake")
-  include("/home/ubuntu/ros_ren/build/raspi_camera/cmake_install.cmake")
   include("/home/ubuntu/ros_ren/build/test_pkg/cmake_install.cmake")
   include("/home/ubuntu/ros_ren/build/image_test/cmake_install.cmake")
-  include("/home/ubuntu/ros_ren/build/raspi_camera_test/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/raspi_camera/cmake_install.cmake")
 
 endif()
 

@@ -11,6 +11,8 @@ ros/ros.h
 -
 sensor_msgs/Image.h
 -
+iostream
+-
 
 /opt/ros/noetic/include/ros/advertise_options.h
 ros/forwards.h

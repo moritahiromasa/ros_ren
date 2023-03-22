@@ -79,6 +79,23 @@ raspi_camera_EXTERNAL_OBJECTS =
 
 /home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: raspi_camera/CMakeFiles/raspi_camera.dir/src/detectFace.cpp.o
 /home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: raspi_camera/CMakeFiles/raspi_camera.dir/build.make
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/libroscpp.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libpthread.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libboost_chrono.so.1.71.0
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libboost_filesystem.so.1.71.0
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/librosconsole.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/librosconsole_log4cxx.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/librosconsole_backend_interface.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/liblog4cxx.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libboost_regex.so.1.71.0
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/libroscpp_serialization.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/librostime.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libboost_date_time.so.1.71.0
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /opt/ros/noetic/lib/libcpp_common.so
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libboost_system.so.1.71.0
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libboost_thread.so.1.71.0
+/home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libconsole_bridge.so.0.4
 /home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libopencv_stitching.so.4.2.0
 /home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libopencv_aruco.so.4.2.0
 /home/ubuntu/ros_ren/devel/lib/raspi_camera/raspi_camera: /usr/lib/aarch64-linux-gnu/libopencv_bgsegm.so.4.2.0

@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.0.2)
 project(raspi_camera)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-# add_compile_options(-std=c++11)
+add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
@@ -104,7 +104,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES raspi_camera
-#  CATKIN_DEPENDS roscpp
+   CATKIN_DEPENDS roscpp 
 #  DEPENDS system_lib
 )
 
@@ -204,11 +204,16 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
-set(CMAKE_CXX_STANDARD 11)
+#set(CMAKE_CXX_STANDARD 17)
 
 add_executable(raspi_camera src/detectFace.cpp)
 
-target_link_libraries(raspi_camera ${OpenCV_LIBS})
+
+
+target_link_libraries(raspi_camera 
+  ${catkin_LIBRARIES}
+  ${OpenCV_LIBRARIES}
+  )
 
 
 target_include_directories(raspi_camera PRIVATE /usr/include/opencv4/)
