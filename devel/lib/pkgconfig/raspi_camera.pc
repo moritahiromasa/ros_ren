@@ -2,7 +2,7 @@ prefix=/home/ubuntu/ros_ren/devel
 
 Name: raspi_camera
 Description: Description of raspi_camera
-Version: 0.0.0
+Version: 1.0.0
 Cflags: 
 Libs: -L${prefix}/lib 
-Requires: roscpp
+Requires: 

@@ -1,5 +1,5 @@
 set(_CATKIN_CURRENT_PACKAGE "raspi_camera")
-set(raspi_camera_VERSION "0.0.0")
+set(raspi_camera_VERSION "1.0.0")
 set(raspi_camera_MAINTAINER "Hiromasa Morita <morimasahirota@gmail.com>")
 set(raspi_camera_PACKAGE_FORMAT "2")
 set(raspi_camera_BUILD_DEPENDS "roscpp" "rospy" "cv_bridge" "image_transport" "sensor_msgs" "std_msgs")

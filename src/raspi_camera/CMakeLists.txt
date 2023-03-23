@@ -2,18 +2,18 @@ cmake_minimum_required(VERSION 3.0.2)
 project(raspi_camera)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
-add_compile_options(-std=c++11)
+#add_compile_options(-std=c++11)
 
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
-find_package(OpenCV REQUIRED)
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
   cv_bridge
   sensor_msgs
   std_msgs
+  image_transport
 )
 
 ## System dependencies are found with CMake's conventions
@@ -108,7 +108,7 @@ find_package(catkin REQUIRED COMPONENTS
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES raspi_camera
-   CATKIN_DEPENDS roscpp 
+#   CATKIN_DEPENDS roscpp 
 #  DEPENDS system_lib
 )
 
@@ -211,15 +211,10 @@ include_directories(
 #set(CMAKE_CXX_STANDARD 17)
 
 add_executable(raspi_camera src/detectFace.cpp)
+target_link_libraries(raspi_camera ${catkin_LIBRARIES})
 
 
-target_link_libraries(raspi_camera 
-  ${catkin_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-  )
-
-
-target_include_directories(raspi_camera PRIVATE /usr/include/opencv4/)
+#target_include_directories(raspi_camera PRIVATE /usr/include/opencv4/)
 
 
 

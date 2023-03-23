@@ -1,5 +1,6 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
+#include <sensor_msgs/Image.h>
 #include <ros/ros.h>
 #include <iostream>
 #include <vector>
@@ -8,13 +9,37 @@ using namespace std;
 //using namespace cv;
 
 
+class ImagePublisher {
+public:
+	ros::NodeHandle nh_;
+	ros::Publisher imagePub_;
+	std::string imagePath_;
+
+	ImagePublisher(void):
+		nh_("~"),
+		imagePath_("/home/ubuntu/ros_ren/images/")
+		{
+			imagePub_ = nh_.advertise<sensor_msgs::Image>("/raspi_image", 1);
+		}
+	
+	void spin(void)
+	{
+		ros::Rate loopRate(1); // 1Hz
+
+		for(int i = 1; i <= 7; i++)
+		{ 
+			string imageFileName = imagePath_ + "img" + to_string(i) + ".jpg";
+//			printf("imageFile=%s\n", imageFileName.c_str());
+			
+			cv::Mat img = cv::imread( imageFileName.c_str() , 1); //カラーで読み込み
+		}
+	}
+};
+
 
 int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "raspi_image"); // ノード名は"raspi_image"
-	
-	cv::Mat img = cv::imread("/home/ubuntu/ros_ren/images/img1.jpg", 1); //カラーで読み込み
-	
 	
 	cv::CascadeClassifier cascade_classifier; // 
 	cascade_classifier.load("/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml"); // カスケードファイルの読み込み
@@ -25,6 +50,14 @@ int main(int argc, char **argv)
 		cerr << "Error:cascade file not found" << endl;
 	else
 		cout << "cascade file found" << endl;
+	
+
+	ImagePublisher publisher;
+	publisher.spin(); // 6枚分画像が読み込めているか確認
+
+	cv::Mat img = cv::imread("/home/ubuntu/ros_ren/images/photo.png", 1); //カラーで読み込み
+	
+	
 		
 
 	vector<cv::Rect> faces; // 輪郭情報を格納する場所
@@ -53,7 +86,7 @@ int main(int argc, char **argv)
 	cv::Scale(青, 緑, 赤)
 	線の太さ
 */
-	imwrite("/tmp/output1.jpg", img);	// 画像を保存
+	imwrite("/tmp/output.png", img);	// 画像を保存
 	cv::waitKey(0); // キーボードが押されるまで処理を待つ
 
 	return 0;
