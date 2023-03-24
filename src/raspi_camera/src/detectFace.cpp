@@ -4,6 +4,9 @@
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
 
+#define CAP_PROP_FRAM_WIDTH 640
+#define CAP_PROP_FRAM_HEIGHT 480
+
 // using namespace cv;
 using namespace std;
 
@@ -35,6 +38,8 @@ int main(int argc, char** argv)
 		cout << "could find USB camera" << endl;
 
 		cv::Mat edges;
+			
+
 		while(1)
 		{
 			cap >> frame;
@@ -48,16 +53,17 @@ int main(int argc, char** argv)
 						4);
 				imwrite("/tmp/output.jpg", frame);
 			}
-
+			
+			imshow("Live", frame);
 			
 			int key = cv::waitKey(1);
-			if(key == 113) // qボタンが押されたとき
+			if(key == 'q') // qボタンが押されたとき
 			{
 				break;
 			} // ループを抜ける(終了する)
-		}
-		
+		}	
 	}
 
+	cv::destroyAllWindows();
 	return 0;
 }
