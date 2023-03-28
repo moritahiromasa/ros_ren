@@ -13,11 +13,13 @@ int main(int argc, char **argv)
 {
 	ros::init(argc, argv, "raspi_image"); // ノード名は"raspi_image"
 	
-	cv::Mat img = cv::imread("/home/ubuntu/ros_ren/images/img1.jpg", 1); //カラーで読み込み
+	cv::Mat img = cv::imread("/home/ubuntu/ros_ren/images/img8.jpg", 1); //カラーで読み込み
 	
 	
 	cv::CascadeClassifier cascade_classifier; // 
-	cascade_classifier.load("/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml"); // カスケードファイルの読み込み
+	cascade_classifier.load("/home/ubuntu/ros_ren/share/cat_cascade_5000.xml"); // カスケードファイルの読み込み
+
+//	cascade_classifier.load("/usr/share/opencv4/haarcascades/haarcascade_frontalface_default.xml"); // カスケードファイルの読み込み
 	
 
 	// カスケードファイルが読み込まれているか確認

@@ -468,6 +468,12 @@ boost_thread_DIR:PATH=/usr/lib/aarch64-linux-gnu/cmake/boost_thread-1.71.0
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/noetic/share/catkin/cmake
 
+//Value Computed by CMake
+cifar_test_BINARY_DIR:STATIC=/home/ubuntu/ros_ren/build/cifar_test
+
+//Value Computed by CMake
+cifar_test_SOURCE_DIR:STATIC=/home/ubuntu/ros_ren/src/cifar_test
+
 //The directory containing a CMake configuration file for class_loader.
 class_loader_DIR:PATH=/opt/ros/noetic/share/class_loader/cmake
 
