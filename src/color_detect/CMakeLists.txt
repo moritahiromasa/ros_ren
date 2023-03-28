@@ -7,9 +7,10 @@ project(color_detect)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+#find_package(OpenCV REQUIRED)
 find_package(catkin REQUIRED COMPONENTS
   cv_bridge
-  image_tranport
+  image_transport
   rospy
   sensor_msgs
   std_msgs

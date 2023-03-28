@@ -92,6 +92,13 @@
 /home/ubuntu/ros_ren/build/image_test/CMakeFiles/test.dir
 /home/ubuntu/ros_ren/build/image_test/CMakeFiles/rebuild_cache.dir
 /home/ubuntu/ros_ren/build/image_test/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/install/strip.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/install/local.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/install.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros_ren/build/color_detect/CMakeFiles/test.dir
 /home/ubuntu/ros_ren/build/raspi_camera/CMakeFiles/install/strip.dir
 /home/ubuntu/ros_ren/build/raspi_camera/CMakeFiles/install/local.dir
 /home/ubuntu/ros_ren/build/raspi_camera/CMakeFiles/install.dir

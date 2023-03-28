@@ -58,6 +58,7 @@ all: raspi_camera_test/all
 all: mypkg/all
 all: test_pkg/all
 all: image_test/all
+all: color_detect/all
 all: raspi_camera/all
 all: raspi_image/all
 
@@ -69,6 +70,7 @@ preinstall: raspi_camera_test/preinstall
 preinstall: mypkg/preinstall
 preinstall: test_pkg/preinstall
 preinstall: image_test/preinstall
+preinstall: color_detect/preinstall
 preinstall: raspi_camera/preinstall
 preinstall: raspi_image/preinstall
 
@@ -85,10 +87,29 @@ clean: raspi_camera_test/clean
 clean: mypkg/clean
 clean: test_pkg/clean
 clean: image_test/clean
+clean: color_detect/clean
 clean: raspi_camera/clean
 clean: raspi_image/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory color_detect
+
+# Recursive "all" directory target.
+color_detect/all:
+
+.PHONY : color_detect/all
+
+# Recursive "preinstall" directory target.
+color_detect/preinstall:
+
+.PHONY : color_detect/preinstall
+
+# Recursive "clean" directory target.
+color_detect/clean:
+
+.PHONY : color_detect/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
