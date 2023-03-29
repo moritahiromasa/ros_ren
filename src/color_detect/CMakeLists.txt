@@ -12,9 +12,12 @@ find_package(catkin REQUIRED COMPONENTS
   cv_bridge
   image_transport
   rospy
+  roscpp
   sensor_msgs
   std_msgs
 )
+
+
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
@@ -207,3 +210,7 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+add_executable(color_detect src/color_detect.cpp)
+
+target_link_libraries(color_detect ${catkin_LIBRARIES})

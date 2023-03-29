@@ -662,6 +662,19 @@ image_publisher/fast:
 .PHONY : image_publisher/fast
 
 #=============================================================================
+# Target rules for targets named color_detect
+
+# Build rule for target.
+color_detect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 color_detect
+.PHONY : color_detect
+
+# fast build rule for target.
+color_detect/fast:
+	$(MAKE) -f color_detect/CMakeFiles/color_detect.dir/build.make color_detect/CMakeFiles/color_detect.dir/build
+.PHONY : color_detect/fast
+
+#=============================================================================
 # Target rules for targets named raspi_camera
 
 # Build rule for target.
@@ -738,6 +751,7 @@ help:
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... geometry_msgs_generate_messages_nodejs"
 	@echo "... image_publisher"
+	@echo "... color_detect"
 	@echo "... raspi_camera"
 	@echo "... raspi_image"
 .PHONY : help

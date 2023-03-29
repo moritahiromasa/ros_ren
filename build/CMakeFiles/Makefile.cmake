@@ -271,6 +271,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "image_test/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "image_test/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "image_test/CMakeFiles/image_publisher.dir/DependInfo.cmake"
+  "color_detect/CMakeFiles/color_detect.dir/DependInfo.cmake"
   "raspi_camera/CMakeFiles/raspi_camera.dir/DependInfo.cmake"
   "raspi_image/CMakeFiles/raspi_image.dir/DependInfo.cmake"
   )
