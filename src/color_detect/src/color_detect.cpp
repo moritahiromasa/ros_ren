@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
 	ros::init(argc, argv, "color_detect");	// ノード名は"color_detect"
 	
-	input = cv::imread("/home/ubuntu/ros_ren/images/img5.jpg", 1); // 入力画像 
+	input = cv::imread("/home/ubuntu/ros_ren/images/img7.jpg", 1); // 入力画像 
 
 	cv::Size s = input.size();
 
