@@ -66,6 +66,7 @@ color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/op
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/base.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/bufferpool.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/check.hpp
+color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/core.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/cuda.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/cuda.inl.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/core/cuda_types.hpp
@@ -135,8 +136,10 @@ color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/op
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/flann/saving.h
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/flann/timer.h
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/highgui.hpp
+color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/highgui/highgui.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/imgcodecs.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/imgproc.hpp
+color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/imgproc/imgproc.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/ml.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/ml/ml.inl.hpp
 color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o: /usr/include/opencv4/opencv2/objdetect.hpp

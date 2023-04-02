@@ -67,6 +67,7 @@ color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o
  /usr/include/opencv4/opencv2/core/base.hpp
  /usr/include/opencv4/opencv2/core/bufferpool.hpp
  /usr/include/opencv4/opencv2/core/check.hpp
+ /usr/include/opencv4/opencv2/core/core.hpp
  /usr/include/opencv4/opencv2/core/cuda.hpp
  /usr/include/opencv4/opencv2/core/cuda.inl.hpp
  /usr/include/opencv4/opencv2/core/cuda_types.hpp
@@ -136,8 +137,10 @@ color_detect/CMakeFiles/color_detect.dir/src/color_detect.cpp.o
  /usr/include/opencv4/opencv2/flann/saving.h
  /usr/include/opencv4/opencv2/flann/timer.h
  /usr/include/opencv4/opencv2/highgui.hpp
+ /usr/include/opencv4/opencv2/highgui/highgui.hpp
  /usr/include/opencv4/opencv2/imgcodecs.hpp
  /usr/include/opencv4/opencv2/imgproc.hpp
+ /usr/include/opencv4/opencv2/imgproc/imgproc.hpp
  /usr/include/opencv4/opencv2/ml.hpp
  /usr/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/include/opencv4/opencv2/objdetect.hpp

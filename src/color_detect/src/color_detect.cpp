@@ -1,7 +1,7 @@
 #include <opencv2/opencv.hpp>
-#include <opencv2/highgui.hpp>
-#include <opencv2/core.hpp>
-#include <opencv2/imgproc.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <ros/ros.h>
 #include <iostream>
 #include <vector>
@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
 	ros::init(argc, argv, "color_detect");	// ノード名は"color_detect"
 	
-	input = cv::imread("/home/ubuntu/ros_ren/image/idphoto.jpg", 1); // 入力画像 
+	input = cv::imread("/home/ubuntu/ros_ren/images/img8.jpg", 1); // 入力画像 
 
 	cv::Size s = input.size();
 
@@ -30,10 +30,9 @@ int main(int argc, char** argv)
 
 	tmp_img = input.clone();
 
-
+	
 	cv::cvtColor(tmp_img, hsv_img, cv::COLOR_BGR2HSV); // 画像の色空間(BGR空間)をHSV空間に変換
 	
-	//
 	cv::inRange(hsv_img, MIN_HSVCOLOR, MAX_HSVCOLOR, msk_img);
 
 
