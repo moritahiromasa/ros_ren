@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-#define MIN_HSVCOLOR cv::Scalar(0, 60, 180)
+#define MIN_HSVCOLOR cv::Scalar(0, 60, 80)
 #define MAX_HSVCOLOR cv::Scalar(10, 160, 240)
 
 using namespace std;
@@ -20,7 +20,7 @@ int main(int argc, char** argv)
 {
 	ros::init(argc, argv, "color_detect");	// ノード名は"color_detect"
 	
-	input = cv::imread("/home/ubuntu/ros_ren/images/img8.jpg", 1); // 入力画像 
+	input = cv::imread("/home/ubuntu/ros_ren/images/img5.jpg", 1); // 入力画像 
 
 	cv::Size s = input.size();
 
@@ -37,7 +37,6 @@ int main(int argc, char** argv)
 
 
 	tmp_img = input.clone();
-	result = cv::Scalar(0.0, 0.0, 0.0);
 	tmp_img.copyTo(result, msk_img);
 
 
