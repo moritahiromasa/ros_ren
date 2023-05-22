@@ -116,3 +116,11 @@
 /home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/edit_cache.dir
 /home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/test.dir
 /home/ubuntu/ros_ren/build/raspi_image/CMakeFiles/raspi_image.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/install/strip.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/install/local.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/install.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/list_install_components.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/rebuild_cache.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/edit_cache.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/test.dir
+/home/ubuntu/ros_ren/build/sobel_test/CMakeFiles/sobel_test.dir

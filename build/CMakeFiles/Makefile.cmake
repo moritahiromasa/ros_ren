@@ -22,6 +22,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "raspi_camera/catkin_generated/package.cmake"
   "raspi_image/catkin_generated/ordered_paths.cmake"
   "raspi_image/catkin_generated/package.cmake"
+  "sobel_test/catkin_generated/ordered_paths.cmake"
+  "sobel_test/catkin_generated/package.cmake"
   "test_pkg/catkin_generated/ordered_paths.cmake"
   "test_pkg/catkin_generated/package.cmake"
   "/home/ubuntu/ros_ren/src/CMakeLists.txt"
@@ -36,6 +38,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/ubuntu/ros_ren/src/raspi_camera_test/CMakeLists.txt"
   "/home/ubuntu/ros_ren/src/raspi_image/CMakeLists.txt"
   "/home/ubuntu/ros_ren/src/raspi_image/package.xml"
+  "/home/ubuntu/ros_ren/src/sobel_test/CMakeLists.txt"
+  "/home/ubuntu/ros_ren/src/sobel_test/package.xml"
   "/home/ubuntu/ros_ren/src/test_pkg/CMakeLists.txt"
   "/home/ubuntu/ros_ren/src/test_pkg/package.xml"
   "/opt/ros/noetic/share/catkin/cmake/all.cmake"
@@ -229,6 +233,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "color_detect/CMakeFiles/CMakeDirectoryInformation.cmake"
   "raspi_camera/CMakeFiles/CMakeDirectoryInformation.cmake"
   "raspi_image/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "sobel_test/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -274,4 +279,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "color_detect/CMakeFiles/color_detect.dir/DependInfo.cmake"
   "raspi_camera/CMakeFiles/raspi_camera.dir/DependInfo.cmake"
   "raspi_image/CMakeFiles/raspi_image.dir/DependInfo.cmake"
+  "sobel_test/CMakeFiles/sobel_test.dir/DependInfo.cmake"
   )

@@ -700,6 +700,19 @@ raspi_image/fast:
 	$(MAKE) -f raspi_image/CMakeFiles/raspi_image.dir/build.make raspi_image/CMakeFiles/raspi_image.dir/build
 .PHONY : raspi_image/fast
 
+#=============================================================================
+# Target rules for targets named sobel_test
+
+# Build rule for target.
+sobel_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sobel_test
+.PHONY : sobel_test
+
+# fast build rule for target.
+sobel_test/fast:
+	$(MAKE) -f sobel_test/CMakeFiles/sobel_test.dir/build.make sobel_test/CMakeFiles/sobel_test.dir/build
+.PHONY : sobel_test/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -754,6 +767,7 @@ help:
 	@echo "... color_detect"
 	@echo "... raspi_camera"
 	@echo "... raspi_image"
+	@echo "... sobel_test"
 .PHONY : help
 
 

@@ -138,6 +138,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/ubuntu/ros_ren/build/color_detect/cmake_install.cmake")
   include("/home/ubuntu/ros_ren/build/raspi_camera/cmake_install.cmake")
   include("/home/ubuntu/ros_ren/build/raspi_image/cmake_install.cmake")
+  include("/home/ubuntu/ros_ren/build/sobel_test/cmake_install.cmake")
 
 endif()
 

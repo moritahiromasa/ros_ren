@@ -1,2 +1,2 @@
-color_detect:image_test:mypkg:raspi_camera:raspi_camera_test:raspi_image:test_pkg
+color_detect:image_test:mypkg:raspi_camera:raspi_camera_test:raspi_image:sobel_test:test_pkg
 -DCATKIN_DEVEL_PREFIX=/home/ubuntu/ros_ren/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/ros_ren/install -G Unix Makefiles
